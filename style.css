@@ -1,0 +1,13 @@
+body {
+    background-image: url('img/treni.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+}
+
+
+img {
+   align-items: center;
+    margin-bottom: 50px;
+}

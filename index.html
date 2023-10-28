@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Prezzo Biglietto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="container-fluid-lg">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/trenitalia.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-center w-100 h-100">
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main class="container py-5">
+        <h2 class="text-white mt-5">Calcola il prezzo del tuo biglietto</h2>
+        <div class="card mb-5">
+            <div class="card-body">
+                <h5 class="card-title">Inserisci i tuoi dettagli</h5>
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" id="nome" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cognome" class="form-label">Cognome:</label>
+                    <input type="text" id="cognome" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="chilometri" class="form-label">Inserisci i chilometri da percorrere:</label>
+                    <input type="number" id="chilometri" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="eta" class="form-label">Inserisci la tua età:</label>
+                    <input type="number" id="eta" class="form-control">
+                </div>
+
+                <button id="calcola" class="btn btn-outline-danger">Calcola prezzo</button>
+            </div>
+        </div>
+
+        <h2 class="text-white">Il tuo biglietto</h2>
+        <div class="card">
+            <div class="card-body" id="bigliettoOutput" style="display:none;">
+                <div class="row">
+                    <div class="col-6">
+                        <p><strong>Dettagli Passeggero:</strong></p>
+                        <p><strong>Nome e Cognome:</strong></p>
+                        <p id="nomeCognomeOutput"></p>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <p>Offerta:</p>
+                                <p id="offertaOutput"></p>
+                            </div>
+                            <div class="col-3">
+                                <p>Carrozza:</p>
+                                <p id="carrozzaOutput">5</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Codice CP:</p>
+                                <p id="codiceCPOutput"></p>
+                            </div>
+                            <div class="col-3">
+                                <p>Costo Biglietto:</p>
+                                <p id="prezzoOutput"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
